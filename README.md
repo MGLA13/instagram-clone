@@ -18,11 +18,12 @@
 - [Getting Started](#getting-started)
   - [Database configuration](#database-configuration)
     - [Laravel internal tables](#laravel-internal-tables)
+  - [Project directories to create](#project-directories-to-create)  
   - [Project packages](#project-packages)
   - [Local environment variables](#local-environment-variables)
   - [Use project](#use-project)
   - [Docker with Laravel Sail](#docker-with-laravel-sail)
-  - [Folders](#folders)
+  - [Directories](#directories)
   - [Built with](#built-with)
 - [Learn more](#learn-more)
 - [License](#license)
@@ -44,7 +45,7 @@ Some of the project's features:
 
 ## Getting Started
 
-Clone and save the repository or download ZIP folder.
+Clone and save the repository or download ZIP file.
 
 ```bash
 git clone git@github.com:MGLA13/instagram-clone.git
@@ -98,11 +99,37 @@ The tables of the database are:
 **personal_access_tokens** table for save personal access tokens generated for API authentication.
 
 
-### Project packages
+### Project directories to create
 
 Open the project in a some code editor as VS Code.
 
-Open a new terminal in the editor. 
+Open a new terminal in the editor and access to the directory `public`
+
+```bash
+cd public
+```
+
+Create a directory with the name **profiles**, this directory will be used to save users profile images.
+
+```bash
+mkdir profiles
+```
+
+Create a directory with the name **uploads**, this directory will be used to save users publications images.
+
+```bash
+mkdir uploads
+```
+
+Go back to the root of the project directory.  
+
+```bash
+cd ..
+```
+
+
+### Project packages
+
 
 Install NPM packages:
 
@@ -144,7 +171,7 @@ Generate a new application key:
 php artisan key:generate 
 ```
 
-Run the database migrations including the seeders and factories that are found in folder `database`:
+Run the database migrations including the seeders and factories that are found in directory `database`:
 
 ```bash
 php artisan migrate --seed
@@ -161,9 +188,9 @@ Open your browser and access to [localhost](http://localhost/) and check the web
 
 ### Docker with Laravel Sail
 
-After clone repository or download ZIP folder.
+After clone repository or download ZIP file.
 
-Open a new terminal and access to the folder project, remember the route when you saved the project.
+Open a new terminal and access to the root of the project directory, remember the route when you saved the project.
 
 ```bash
 cd instagram-clone
@@ -220,7 +247,7 @@ You can stop running the application:
 ```
 
 
-### Folders
+### Directories
 
 *   `app/Http/Controllers` Contains all the controllers
 *   `app/Livewire` Contains all the livewire components
