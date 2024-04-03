@@ -103,7 +103,7 @@ The tables of the database are:
 
 Open the project in a some code editor as VS Code.
 
-Open a new terminal in the editor and access to the directory `public`
+Open a new terminal in the editor and access to the `public` directory.
 
 ```bash
 cd public
@@ -171,7 +171,7 @@ Generate a new application key:
 php artisan key:generate 
 ```
 
-Run the database migrations including the seeders and factories that are found in directory `database`:
+Run the database migrations including the seeders and factories that are found in `database` directory:
 
 ```bash
 php artisan migrate --seed
